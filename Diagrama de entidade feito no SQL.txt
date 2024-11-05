@@ -1,0 +1,39 @@
+Diagrama de Entidade-Relacionamento (ER)
+
+
+          +---------------+
+          |    Drivers   |
+          +---------------+
+          |  DriverID (PK) |
+          |  Nome          |
+          |  CNH           |
+          |  Endereço      |
+          |  Contato       |
+          +---------------+
+                  |
+                  |
+                  |
+                  v
+          +---------------+
+          |    Orders    |
+          +---------------+
+          |  OrderID (PK) |
+          |  ClientID (FK) |
+          |  DriverID (FK) |
+          |  DetalhesPedido |
+          |  DataEntrega   |
+          |  Status        |
+          +---------------+
+                  |
+                  |
+                  |
+                  v
+          +---------------+
+          |    Clients   |
+          +---------------+
+          |  ClientID (PK) |
+          |  Nome          |
+          |  Empresa       |
+          |  Endereço      |
+          |  Contato       |
+          +---------------+
